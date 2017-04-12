@@ -1,0 +1,6 @@
+framework module LinearProgressView {
+  umbrella header "LinearProgressView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - LinearProgressView (0.1.0)
+
+DEPENDENCIES:
+  - LinearProgressView (from `../`)
+
+EXTERNAL SOURCES:
+  LinearProgressView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LinearProgressView: 86f6a11845acb87f6f43bb7530476dd0118deccc
+
+PODFILE CHECKSUM: e62eef83f39d8b6049dc93dff3edb88c29ddb1f0
+
+COCOAPODS: 1.2.0

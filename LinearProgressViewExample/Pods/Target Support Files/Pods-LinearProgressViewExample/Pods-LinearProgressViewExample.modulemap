@@ -1,0 +1,6 @@
+framework module Pods_LinearProgressViewExample {
+  umbrella header "Pods-LinearProgressViewExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
