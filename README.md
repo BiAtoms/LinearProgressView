@@ -1,6 +1,10 @@
 # LinearProgressView
 
 A simple progress view for iOS
+<div>
+  <img src="Screenshots/demo.gif" height="400px"/>
+  <img src="Screenshots/designer.png"/>
+</div>
 
 ## Requirements
 
