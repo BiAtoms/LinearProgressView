@@ -98,6 +98,7 @@ open class LinearProgressView: UIView {
             NSLayoutConstraint(item: trackView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottomMargin, multiplier: 1.0, constant: 0),
             trackViewWidthConstraint
             ])
+        self.layoutMargins = .zero
     }
     
     open func setProgress(_ value: Float, animated: Bool) {
