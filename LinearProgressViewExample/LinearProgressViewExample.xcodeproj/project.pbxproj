@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EB4E308E052953EAA5FC1B8 /* Pods_LinearProgressViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0812C4A39D5A81A0A6A4FABC /* Pods_LinearProgressViewExample.framework */; };
 		9DC6CB171E9E16B50080A14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC6CB161E9E16B50080A14B /* AppDelegate.swift */; };
 		9DC6CB191E9E16B50080A14B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC6CB181E9E16B50080A14B /* ViewController.swift */; };
 		9DC6CB1C1E9E16B50080A14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC6CB1A1E9E16B50080A14B /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0812C4A39D5A81A0A6A4FABC /* Pods_LinearProgressViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinearProgressViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D83F8C34273C5FE9DF6E55A /* Pods-LinearProgressViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinearProgressViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		90E97F7539C297AD8D258A10 /* Pods-LinearProgressViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinearProgressViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9DC6CB131E9E16B50080A14B /* LinearProgressViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinearProgressViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC6CB161E9E16B50080A14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC6CB181E9E16B50080A14B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB4E308E052953EAA5FC1B8 /* Pods_LinearProgressViewExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				9DC6CB151E9E16B50080A14B /* LinearProgressViewExample */,
 				9DC6CB141E9E16B50080A14B /* Products */,
+				F92FBDF411A348848C23970D /* Pods */,
+				AC74892BF310969DE0AD29E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LinearProgressViewExample;
 			sourceTree = "<group>";
 		};
+		AC74892BF310969DE0AD29E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0812C4A39D5A81A0A6A4FABC /* Pods_LinearProgressViewExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F92FBDF411A348848C23970D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90E97F7539C297AD8D258A10 /* Pods-LinearProgressViewExample.debug.xcconfig */,
+				6D83F8C34273C5FE9DF6E55A /* Pods-LinearProgressViewExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DC6CB251E9E16B50080A14B /* Build configuration list for PBXNativeTarget "LinearProgressViewExample" */;
 			buildPhases = (
+				73AEE6EE277FDA991483863F /* [CP] Check Pods Manifest.lock */,
 				9DC6CB0F1E9E16B50080A14B /* Sources */,
 				9DC6CB101E9E16B50080A14B /* Frameworks */,
 				9DC6CB111E9E16B50080A14B /* Resources */,
+				60952EF85F6A1894E3E94166 /* [CP] Embed Pods Frameworks */,
+				D5AF4A87FB6230DFF3D9DDFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -91,11 +118,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = BiAtoms;
 				TargetAttributes = {
 					9DC6CB121E9E16B50080A14B = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +158,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60952EF85F6A1894E3E94166 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LinearProgressView/LinearProgressView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LinearProgressView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73AEE6EE277FDA991483863F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinearProgressViewExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5AF4A87FB6230DFF3D9DDFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DC6CB0F1E9E16B50080A14B /* Sources */ = {
@@ -172,7 +254,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -180,7 +264,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -222,7 +311,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -230,7 +321,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,25 +354,29 @@
 		};
 		9DC6CB261E9E16B50080A14B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E97F7539C297AD8D258A10 /* Pods-LinearProgressViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinearProgressViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biatoms.LinearProgressViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		9DC6CB271E9E16B50080A14B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D83F8C34273C5FE9DF6E55A /* Pods-LinearProgressViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinearProgressViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biatoms.LinearProgressViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

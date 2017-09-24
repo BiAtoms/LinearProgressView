@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         isCornerRoundedSwitch.addTarget(self, action: #selector(updateLinearProgressView), for: .valueChanged)
     }
     
+    @objc
     func updateLinearProgressView() {
         linearProgressView.setProgress( progressSlider.value, animated: true)
         linearProgressView.barInset =  CGFloat(barInsetSlider.value)

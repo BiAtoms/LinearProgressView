@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,11 +20,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpB-tM-d88" customClass="LinearProgressView" customModule="LinearProgressView">
-                                <rect key="frame" x="36" y="86" width="303" height="30"/>
+                                <rect key="frame" x="36" y="86" width="248" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bSK-uN-u6S"/>
@@ -52,13 +52,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9D-Dd-e0o">
-                                <rect key="frame" x="36" y="233.5" width="303" height="200"/>
+                                <rect key="frame" x="36" y="184" width="248" height="200"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-2s-4Th" userLabel="Horizontal Slider2">
-                                        <rect key="frame" x="81" y="85" width="224" height="31"/>
+                                        <rect key="frame" x="81" y="85" width="169" height="31"/>
                                     </slider>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjz-9u-V3q">
-                                        <rect key="frame" x="254" y="135" width="51" height="31"/>
+                                        <rect key="frame" x="199" y="135" width="51" height="31"/>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-H9-HOG">
                                         <rect key="frame" x="0.0" y="39.5" width="73" height="21"/>
@@ -79,7 +79,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Uzb-oi-2Y7">
-                                        <rect key="frame" x="81" y="35" width="224" height="31"/>
+                                        <rect key="frame" x="81" y="35" width="169" height="31"/>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,6 +87,7 @@
                                     <constraint firstItem="rMx-F8-Rxs" firstAttribute="centerY" secondItem="S9D-Dd-e0o" secondAttribute="centerY" id="0b8-Yi-y6q"/>
                                     <constraint firstItem="4jD-Ht-AeW" firstAttribute="centerY" secondItem="S9D-Dd-e0o" secondAttribute="centerY" multiplier="1.5" id="AoT-Qo-Qp9"/>
                                     <constraint firstItem="Pa1-H9-HOG" firstAttribute="centerY" secondItem="S9D-Dd-e0o" secondAttribute="centerY" multiplier="0.5" id="Esj-04-B0L"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4jD-Ht-AeW" secondAttribute="trailing" constant="20" symbolic="YES" id="FY3-GR-lgJ"/>
                                     <constraint firstItem="QUJ-2s-4Th" firstAttribute="centerY" secondItem="S9D-Dd-e0o" secondAttribute="centerY" id="IQq-kL-JVM"/>
                                     <constraint firstItem="Uzb-oi-2Y7" firstAttribute="centerY" secondItem="S9D-Dd-e0o" secondAttribute="centerY" multiplier="0.5" id="RdE-XF-UON"/>
                                     <constraint firstAttribute="height" constant="200" id="SgN-E1-FjS"/>
@@ -97,12 +98,13 @@
                                     <constraint firstAttribute="trailing" secondItem="Uzb-oi-2Y7" secondAttribute="trailing" id="e9Y-HB-FgW"/>
                                     <constraint firstItem="4jD-Ht-AeW" firstAttribute="leading" secondItem="S9D-Dd-e0o" secondAttribute="leading" id="eHF-F3-x8n"/>
                                     <constraint firstItem="vjz-9u-V3q" firstAttribute="centerY" secondItem="S9D-Dd-e0o" secondAttribute="centerY" multiplier="1.5" id="gjR-2x-fW5"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rMx-F8-Rxs" secondAttribute="trailing" constant="20" symbolic="YES" id="tLE-hb-eZO"/>
                                     <constraint firstItem="rMx-F8-Rxs" firstAttribute="leading" secondItem="S9D-Dd-e0o" secondAttribute="leading" id="uMi-pT-k5B"/>
                                     <constraint firstAttribute="trailing" secondItem="vjz-9u-V3q" secondAttribute="trailing" id="xjc-hM-VNL"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-qA-fyf">
-                                <rect key="frame" x="135" y="433.5" width="105" height="30"/>
+                                <rect key="frame" x="107.5" y="384" width="105" height="30"/>
                                 <state key="normal" title="Random Colors"/>
                                 <connections>
                                     <action selector="didTapRandomColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0G-1G-e3X"/>
