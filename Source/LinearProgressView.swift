@@ -115,10 +115,7 @@ open class LinearProgressView: UIView {
         super.layoutSubviews()
         
         let maxWidth: CGFloat = max(self.frame.width - barInset * 2, 0) //prevent from becoming negative
-        var calculatedWidth: CGFloat = 0
-        if (progress - minimumValue) != 0 && (maximumValue - minimumValue) != 0 {
-          calculatedWidth = CGFloat((progress - minimumValue) / (maximumValue - minimumValue))   * maxWidth
-        }
+        let calculatedWidth: CGFloat = maximumValue - minimumValue != 0 ? CGFloat((progress - minimumValue) / (maximumValue - minimumValue)) * maxWidth : 0
         trackViewWidthConstraint.constant = calculatedWidth
         if isCornersRounded {
             self.layer.cornerRadius = self.frame.height / 2
