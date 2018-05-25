@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EB4E308E052953EAA5FC1B8 /* Pods_LinearProgressViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0812C4A39D5A81A0A6A4FABC /* Pods_LinearProgressViewExample.framework */; };
 		9DC6CB171E9E16B50080A14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC6CB161E9E16B50080A14B /* AppDelegate.swift */; };
 		9DC6CB191E9E16B50080A14B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC6CB181E9E16B50080A14B /* ViewController.swift */; };
 		9DC6CB1C1E9E16B50080A14B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC6CB1A1E9E16B50080A14B /* Main.storyboard */; };
 		9DC6CB1E1E9E16B50080A14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC6CB1D1E9E16B50080A14B /* Assets.xcassets */; };
 		9DC6CB211E9E16B50080A14B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC6CB1F1E9E16B50080A14B /* LaunchScreen.storyboard */; };
+		F2038CCD3EA9D9B8A05E78DA /* Pods_LinearProgressViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1817E3A66C390997A92DB9 /* Pods_LinearProgressViewExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0812C4A39D5A81A0A6A4FABC /* Pods_LinearProgressViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinearProgressViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D83F8C34273C5FE9DF6E55A /* Pods-LinearProgressViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinearProgressViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample.release.xcconfig"; sourceTree = "<group>"; };
-		90E97F7539C297AD8D258A10 /* Pods-LinearProgressViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinearProgressViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		3C1817E3A66C390997A92DB9 /* Pods_LinearProgressViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinearProgressViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5D8708709E65BC2FE435FA /* Pods-LinearProgressViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinearProgressViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		9DC6CB131E9E16B50080A14B /* LinearProgressViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinearProgressViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC6CB161E9E16B50080A14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC6CB181E9E16B50080A14B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +25,7 @@
 		9DC6CB1D1E9E16B50080A14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC6CB201E9E16B50080A14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DC6CB221E9E16B50080A14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58B94D02A68DA2A4B553379 /* Pods-LinearProgressViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinearProgressViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB4E308E052953EAA5FC1B8 /* Pods_LinearProgressViewExample.framework in Frameworks */,
+				F2038CCD3EA9D9B8A05E78DA /* Pods_LinearProgressViewExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +45,8 @@
 			children = (
 				9DC6CB151E9E16B50080A14B /* LinearProgressViewExample */,
 				9DC6CB141E9E16B50080A14B /* Products */,
-				F92FBDF411A348848C23970D /* Pods */,
-				AC74892BF310969DE0AD29E5 /* Frameworks */,
+				A6148D91D2E709A0320F924D /* Pods */,
+				DAE206766BBC5B85D439E67E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,21 +71,21 @@
 			path = LinearProgressViewExample;
 			sourceTree = "<group>";
 		};
-		AC74892BF310969DE0AD29E5 /* Frameworks */ = {
+		A6148D91D2E709A0320F924D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0812C4A39D5A81A0A6A4FABC /* Pods_LinearProgressViewExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F92FBDF411A348848C23970D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				90E97F7539C297AD8D258A10 /* Pods-LinearProgressViewExample.debug.xcconfig */,
-				6D83F8C34273C5FE9DF6E55A /* Pods-LinearProgressViewExample.release.xcconfig */,
+				D58B94D02A68DA2A4B553379 /* Pods-LinearProgressViewExample.debug.xcconfig */,
+				8F5D8708709E65BC2FE435FA /* Pods-LinearProgressViewExample.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DAE206766BBC5B85D439E67E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C1817E3A66C390997A92DB9 /* Pods_LinearProgressViewExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,12 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DC6CB251E9E16B50080A14B /* Build configuration list for PBXNativeTarget "LinearProgressViewExample" */;
 			buildPhases = (
-				73AEE6EE277FDA991483863F /* [CP] Check Pods Manifest.lock */,
+				A7CB08701D6AF4161461D1E7 /* [CP] Check Pods Manifest.lock */,
 				9DC6CB0F1E9E16B50080A14B /* Sources */,
 				9DC6CB101E9E16B50080A14B /* Frameworks */,
 				9DC6CB111E9E16B50080A14B /* Resources */,
-				60952EF85F6A1894E3E94166 /* [CP] Embed Pods Frameworks */,
-				D5AF4A87FB6230DFF3D9DDFA /* [CP] Copy Pods Resources */,
+				46DB8322077D7E9F876D5B98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,7 +117,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = BiAtoms;
 				TargetAttributes = {
 					9DC6CB121E9E16B50080A14B = {
@@ -160,7 +159,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		60952EF85F6A1894E3E94166 /* [CP] Embed Pods Frameworks */ = {
+		46DB8322077D7E9F876D5B98 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +177,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		73AEE6EE277FDA991483863F /* [CP] Check Pods Manifest.lock */ = {
+		A7CB08701D6AF4161461D1E7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,21 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5AF4A87FB6230DFF3D9DDFA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinearProgressViewExample/Pods-LinearProgressViewExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -258,6 +242,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -265,6 +250,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -315,6 +301,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -322,6 +309,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -354,7 +342,7 @@
 		};
 		9DC6CB261E9E16B50080A14B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90E97F7539C297AD8D258A10 /* Pods-LinearProgressViewExample.debug.xcconfig */;
+			baseConfigurationReference = D58B94D02A68DA2A4B553379 /* Pods-LinearProgressViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinearProgressViewExample/Info.plist;
@@ -368,7 +356,7 @@
 		};
 		9DC6CB271E9E16B50080A14B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D83F8C34273C5FE9DF6E55A /* Pods-LinearProgressViewExample.release.xcconfig */;
+			baseConfigurationReference = 8F5D8708709E65BC2FE435FA /* Pods-LinearProgressViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinearProgressViewExample/Info.plist;

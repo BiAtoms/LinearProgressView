@@ -12,7 +12,7 @@ import UIKit
 open class LinearProgressView: UIView {
     
     private let trackView = UIView()
-    private lazy var trackViewWidthConstraint: NSLayoutConstraint =  { return NSLayoutConstraint(item: self.trackView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0) }()
+    private lazy var trackViewWidthConstraint: NSLayoutConstraint =  { NSLayoutConstraint(item: self.trackView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0) }()
 
     @IBInspectable
     open var barColor: UIColor = .gray {
@@ -74,10 +74,6 @@ open class LinearProgressView: UIView {
     
     open var animationDuration: TimeInterval = 0.25
     
-    convenience init() {
-        self.init(frame: .zero)
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         prepare()
@@ -114,7 +110,7 @@ open class LinearProgressView: UIView {
     override open func layoutSubviews() {
         super.layoutSubviews()
         
-        let maxWidth: CGFloat = max(self.frame.width - barInset * 2, 0) //prevent from becoming negative
+        let maxWidth: CGFloat = max(self.frame.width - barInset * 2, 0) // prevent from becoming negative
         let calculatedWidth: CGFloat = maximumValue - minimumValue != 0 ? CGFloat((progress - minimumValue) / (maximumValue - minimumValue)) * maxWidth : 0
         trackViewWidthConstraint.constant = calculatedWidth
         if isCornersRounded {
